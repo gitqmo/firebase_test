@@ -1,0 +1,121 @@
+{
+	"retriving-data":{
+		"book":[{
+				"author":"J.K. Rowling",
+				"title":"Harry Potter"
+			}, {
+				"author":"酆士昌",
+				"title":"R語言：數學計算、統計模型與金融大數據分析"
+			}
+		],
+		"dinosaurs":{
+			"Agilisaurus louderbacki":{
+				"height":0.5,
+				"length":1,
+				"weight":100
+			},
+			"Hypacrosaurus stebingeri ":{
+				"height":3,
+				"length":4,
+				"weight":1000
+			},
+			"lambeosaurus":{
+				"height":2.1,
+				"length":12.5,
+				"weight":5000
+			},
+			"stegosaurus":{
+				"height":4,
+				"length":9,
+				"weight":2500
+			}
+		},
+		"scores":{
+			"bruhathkayosaurus":55,
+			"lambeosaurus":21,
+			"linhenykus":80,
+			"pterodactyl":93,
+			"stegosaurus":5,
+			"triceratops":22
+		}
+	},
+	"saving-data":{
+		"posts":{
+			"-KGLBMNEXDz788tbfMKB":{
+				"author":"alanisawesome",
+				"title":"The Turing Machine"
+			},
+			"-KGLBMNEXDz788tbfMKC":{
+				"author":"gracehop",
+				"title":"Announcing COBOL, a New Programming Language"
+			}
+		},
+		"upvotes":3,
+		"users":{
+			"alanisawesome":{
+				"birthYear":1912,
+				"fullName":"Alan Turing",
+				"nickname":"Alan The Machine"
+			},
+			"gracehop":{
+				"nickname":"Amazing Grace"
+			}
+		}
+	},
+	"structuring-data":{
+		"groups":{
+			"alpha":{
+				"members":{
+					"brinchen":true,
+					"mchen":true
+				},
+				"name":"Alpha Tango"
+			},
+			"bravo":{
+				"members":{
+					"brinchen":true
+				},
+				"name":"Bravo Romeo"
+			},
+			"charlie":{
+				"members":{
+					"hmadi":true,
+					"mchen":true
+				},
+				"name":"Charlie Whiskey"
+			},
+			"delta":{
+				"name":"Delta Kilo"
+			},
+			"echo":{
+				"name":"Echo Lima"
+			},
+			"foxtrot":{
+				"name":"Foxtrot November"
+			}
+		},
+		"users":{
+			"brinchen":{
+				"groups":{
+					"alpha":true,
+					"bravo":true
+				},
+				"name":"Byambyn Rinchen"
+			},
+			"hmadi":{
+				"groups":{
+					"charlie":true
+				},
+				"name":"Hamadi Madi"
+			},
+			"mchen":{
+				"groups":{
+					"alpha":true,
+					"charlie":true,
+					"echo":true
+				},
+				"name":"Mary Chen"
+			}
+		}
+	}
+}
