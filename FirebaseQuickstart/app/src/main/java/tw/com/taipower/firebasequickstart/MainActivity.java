@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
 //        this.testSavingData();
 //        this.testRetrivingData();
-        this.testStructuringData();
+//        this.testStructuringData();
+        this.testUserAuthentication();
     }
 
     /**
@@ -79,5 +80,15 @@ public class MainActivity extends AppCompatActivity {
         // test read method 1、2
         structuringData.testStructuringDataBenifit();
         structuringData.testJoiningFlattenedData();
+    }
+
+    /**
+     * 測試Good Structuring Data範例
+     */
+    private void testUserAuthentication() {
+        UserAuthentication userAuthentication = new UserAuthentication();
+
+        // test read method 1、2
+        userAuthentication.testAuthAnonymously();
     }
 }
