@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
     private void testStructuringData() {
         StructuringData structuringData = new StructuringData();
 
+        // test read method 1、2
         structuringData.testStructuringDataBenifit();
+        structuringData.testJoiningFlattenedData();
     }
 }

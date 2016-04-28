@@ -1,5 +1,6 @@
 package tw.com.taipower.firebasequickstart;
 
+import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -20,17 +21,64 @@ public class StructuringData {
      * 1、嘗試讀取good json structure data
      */
     public void testStructuringDataBenifit(){
-        // See if Mary is in the 'alpha' group
-        Firebase chatRef = this.ref.child("users/mchen/groups/alpha");
+        // See if Andrew is in the 'bravo' group
+        Firebase chatRef = this.ref.child("users/andrew/groups/bravo");
         chatRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 String result = snapshot.getValue() == null ? "is not" : "is";
-                System.out.println("Mary " + result + " a member of alpha group");
+                System.out.println("Andrew " + result + " a member of bravo group");
             }
             @Override
             public void onCancelled(FirebaseError firebaseError) {
                 // ignore
+            }
+        });
+    }
+
+    /**
+     * 2、嘗試結合扁平式資料表(Joining Flattened Data)去搜索資料
+     */
+    public void testJoiningFlattenedData(){
+        // List the names of all Andrew's groups
+        final Firebase chatRef = this.ref;
+
+        // fetch a list of Andrew's groups
+        chatRef.child("users/andrew/groups").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot snapshot, String previousChildKey) {
+                // for each group, fetch the name and print it
+                String groupKey = snapshot.getKey();
+                chatRef.child("groups/" + groupKey + "/name").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot snapshot) {
+                        System.out.println("Andrew is a member of this group: " + snapshot.getValue());
+                    }
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
+                        // ignore
+                    }
+                });
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
             }
         });
     }

@@ -1,120 +1,162 @@
 {
-	"retriving-data":{
-		"book":[{
-				"author":"J.K. Rowling",
-				"title":"Harry Potter"
-			}, {
-				"author":"酆士昌",
-				"title":"R語言：數學計算、統計模型與金融大數據分析"
-			}
-		],
-		"dinosaurs":{
-			"Agilisaurus louderbacki":{
-				"height":0.5,
-				"length":1,
-				"weight":100
+	"retriving-data" : {
+		"book" : [ {
+			"author" : "J.K. Rowling",
+			"title" : "Harry Potter"
+		}, {
+			"author" : "酆士昌",
+			"title" : "R語言：數學計算、統計模型與金融大數據分析"
+		} ],
+		"dinosaurs" : {
+			"Agilisaurus louderbacki" : {
+				"height" : 0.5,
+				"length" : 1,
+				"weight" : 100
 			},
-			"Hypacrosaurus stebingeri ":{
-				"height":3,
-				"length":4,
-				"weight":1000
+			"Hypacrosaurus stebingeri " : {
+				"height" : 3,
+				"length" : 4,
+				"weight" : 1000
 			},
-			"lambeosaurus":{
-				"height":2.1,
-				"length":12.5,
-				"weight":5000
+			"lambeosaurus" : {
+				"height" : 2.1,
+				"length" : 12.5,
+				"weight" : 5000
 			},
-			"stegosaurus":{
-				"height":4,
-				"length":9,
-				"weight":2500
+			"stegosaurus" : {
+				"height" : 4,
+				"length" : 9,
+				"weight" : 2500
 			}
 		},
-		"scores":{
-			"bruhathkayosaurus":55,
-			"lambeosaurus":21,
-			"linhenykus":80,
-			"pterodactyl":93,
-			"stegosaurus":5,
-			"triceratops":22
+		"scores" : {
+			"bruhathkayosaurus" : 55,
+			"lambeosaurus" : 21,
+			"linhenykus" : 80,
+			"pterodactyl" : 93,
+			"stegosaurus" : 5,
+			"triceratops" : 22
 		}
 	},
-	"saving-data":{
-		"posts":{
-			"-KGLBMNEXDz788tbfMKB":{
-				"author":"alanisawesome",
-				"title":"The Turing Machine"
+	"saving-data" : {
+		"posts" : {
+			"-KGLBMNEXDz788tbfMKB" : {
+				"author" : "alanisawesome",
+				"title" : "The Turing Machine"
 			},
-			"-KGLBMNEXDz788tbfMKC":{
-				"author":"gracehop",
-				"title":"Announcing COBOL, a New Programming Language"
+			"-KGLBMNEXDz788tbfMKC" : {
+				"author" : "gracehop",
+				"title" : "Announcing COBOL, a New Programming Language"
+			},
+			"-KGMKG3bbE-roYn6ZU0f" : {
+				"author" : "gracehop",
+				"title" : "Announcing COBOL, a New Programming Language"
+			},
+			"-KGMKG3qi43kZHYlXgpV" : {
+				"author" : "alanisawesome",
+				"title" : "The Turing Machine"
+			},
+			"-KGMKG3qi43kZHYlXgpW" : {
+				"author" : "gracehop",
+				"title" : "Announcing COBOL, a New Programming Language"
 			}
 		},
-		"upvotes":3,
-		"users":{
-			"alanisawesome":{
-				"birthYear":1912,
-				"fullName":"Alan Turing",
-				"nickname":"Alan The Machine"
+		"upvotes" : 4,
+		"users" : {
+			"alanisawesome" : {
+				"birthYear" : 1912,
+				"fullName" : "Alan Turing",
+				"nickname" : "Alan The Machine"
 			},
-			"gracehop":{
-				"nickname":"Amazing Grace"
+			"gracehop" : {
+				"nickname" : "Amazing Grace"
 			}
 		}
 	},
-	"structuring-data":{
-		"groups":{
-			"alpha":{
-				"members":{
-					"brinchen":true,
-					"mchen":true
+	"structuring-data" : {
+		"groups" : {
+			"alpha" : {
+				"members" : {
+					"bruce" : true,
+					"cats" : true,
+					"chuck" : true
 				},
-				"name":"Alpha Tango"
+				"name" : "Room Alpha"
 			},
-			"bravo":{
-				"members":{
-					"brinchen":true
+			"bravo" : {
+				"members" : {
+					"andrew" : true,
+					"rick" : true
 				},
-				"name":"Bravo Romeo"
+				"name" : "Room Bravo"
 			},
-			"charlie":{
-				"members":{
-					"hmadi":true,
-					"mchen":true
-				},
-				"name":"Charlie Whiskey"
-			},
-			"delta":{
-				"name":"Delta Kilo"
-			},
-			"echo":{
-				"name":"Echo Lima"
-			},
-			"foxtrot":{
-				"name":"Foxtrot November"
+			"charlie" : {
+				"name" : "Room Charlie"
 			}
 		},
-		"users":{
-			"brinchen":{
-				"groups":{
-					"alpha":true,
-					"bravo":true
+		"messages" : {
+			"alpha" : {
+				"-JRMxV3pAytT6HnmKQnB" : {
+					"message" : "Be like water making its way through cracks.",
+					"timestamp" : 1404856303959,
+					"user" : "bruce"
 				},
-				"name":"Byambyn Rinchen"
+				"-JRMxm5cFfp-TeUG1JE_" : {
+					"message" : "I don't initiate violence, I retaliate.",
+					"timestamp" : 1404856377800,
+					"user" : "chuck"
+				},
+				"-JRMxr7_n9Mun-gNVnCu" : {
+					"message" : "All your base are belong to us.",
+					"timestamp" : 1404856398405,
+					"user" : "cats"
+				}
 			},
-			"hmadi":{
-				"groups":{
-					"charlie":true
+			"bravo" : {
+				"-JRRqVqUMLGn8KtHMRqe" : {
+					"message" : "Firebase is the greatest!",
+					"timestamp" : 1404938358024,
+					"user" : "andrew"
 				},
-				"name":"Hamadi Madi"
+				"-JRRqVqXPY_yP_4kuU_7" : {
+					"message" : "It's never gonna let me down.",
+					"timestamp" : 1404938359024,
+					"user" : "rick"
+				}
+			}
+		},
+		"users" : {
+			"andrew" : {
+				"groups" : {
+					"bravo" : true
+				},
+				"name" : "Andrew Lee"
 			},
-			"mchen":{
-				"groups":{
-					"alpha":true,
-					"charlie":true,
-					"echo":true
+			"bruce" : {
+				"groups" : {
+					"alpha" : true
 				},
-				"name":"Mary Chen"
+				"name" : "Bruce Lee"
+			},
+			"cats" : {
+				"groups" : {
+					"alpha" : true
+				},
+				"name" : "Cats"
+			},
+			"chuck" : {
+				"groups" : {
+					"alpha" : true,
+					"bravo" : true,
+					"charlie" : true
+				},
+				"name" : "Chuck Norris"
+			},
+			"rick" : {
+				"groups" : {
+					"bravo" : true
+				},
+				"name" : "Rick Astley"
 			}
 		}
 	}

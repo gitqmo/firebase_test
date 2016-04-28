@@ -103,7 +103,9 @@ public class SavingData {
     }
 
     /**
-     * 4、嘗試使用CompletionListener取得Firebase回傳的寫入結果(成功or失敗的訊息)
+     * 4、嘗試使用push()方法，使寫入陣列或MAP類型資料時，系統會自動賦予唯一的ID。
+     * ※Firebase provides a push() function that generates a unique ID
+     * every time a new child is added to the specified Firebase reference.
      * ※Firebase generated a timestamp-based, unique ID for each blog post,
      * and no write conflicts will occur if multiple users create a blog post at the same time.
      */
