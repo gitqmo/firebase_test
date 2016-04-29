@@ -83,12 +83,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 測試Good Structuring Data範例
+     * 測試User Authentication範例
      */
     private void testUserAuthentication() {
         UserAuthentication userAuthentication = new UserAuthentication();
 
         // test read method 1、2
-        userAuthentication.testAuthAnonymously();
+//        userAuthentication.testAuthAnonymously();
+
+        userAuthentication.testUserAuthentication();
     }
 }
