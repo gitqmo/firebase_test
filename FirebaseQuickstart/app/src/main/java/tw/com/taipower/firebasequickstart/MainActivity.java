@@ -13,13 +13,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Firebase.setAndroidContext(this);
+        Firebase.getDefaultConfig().setPersistenceEnabled(true);
 
         this.setContentView(R.layout.activity_main);
 
 //        this.testSavingData();
 //        this.testRetrivingData();
 //        this.testStructuringData();
-        this.testUserAuthentication();
+//        this.testUserAuthentication();
+        this.testOfflineCapabilities();
+
     }
 
     /**
@@ -90,7 +93,13 @@ public class MainActivity extends AppCompatActivity {
 
         // test read method 1、2
 //        userAuthentication.testAuthAnonymously();
-
         userAuthentication.testUserAuthentication();
+    }
+
+    private void testOfflineCapabilities(){
+        OfflineCapabilities offlineCapabilities = new OfflineCapabilities();
+
+//        offlineCapabilities.testQueryingDataOffline();
+        offlineCapabilities.testManagingPresence();
     }
 }
