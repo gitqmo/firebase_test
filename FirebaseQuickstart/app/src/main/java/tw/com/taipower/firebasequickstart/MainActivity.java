@@ -12,9 +12,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Firebase.setAndroidContext(this);
-        Firebase.getDefaultConfig().setPersistenceEnabled(true);
-
         this.setContentView(R.layout.activity_main);
 
 //        this.testSavingData();
@@ -99,7 +96,15 @@ public class MainActivity extends AppCompatActivity {
     private void testOfflineCapabilities(){
         OfflineCapabilities offlineCapabilities = new OfflineCapabilities();
 
+        // test read method 1、2
 //        offlineCapabilities.testQueryingDataOffline();
-        offlineCapabilities.testManagingPresence();
+//        offlineCapabilities.testManagingPresence();
+
+        // test read method 3、4
+//        offlineCapabilities.testDetectingConnectionState();
+//        offlineCapabilities.testHandlingLatency();
+
+        // test read method 5
+        offlineCapabilities.testSamplePresenceApp();
     }
 }
