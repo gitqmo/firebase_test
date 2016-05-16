@@ -14,7 +14,11 @@ import tw.com.taipower.firebasequickstart.entity.DinosaurFacts;
  * Created by new on 2016/4/26.
  */
 public class RetrivingData {
-    private final static String myFirebaseURL = "https://prework-db.firebaseio.com/";
+    private String myFirebaseURL = "https://prework-db.firebaseio.com/";
+
+    public RetrivingData(String firebaseUrl){
+        this.myFirebaseURL = firebaseUrl;  // setting default root
+    }
 
     /**
      * 1、嘗試使用ValueEventListener從Firebase讀取資料

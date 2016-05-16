@@ -7,7 +7,8 @@ import com.firebase.client.Firebase;
 
 public class MainActivity extends AppCompatActivity {
 
-    public final static String exampleFirebaseURL = "https://docs-examples.firebaseio.com/web/saving-data/fireblog/posts/";
+    public final String exampleFirebaseURL = "https://docs-examples.firebaseio.com/web/saving-data/fireblog/posts/";
+    private final String myFirebaseURL = this.getResources().getString(R.string.firebase_href);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
      * 測試寫入Firebase範例
      */
     private void testSavingData() {
-        SavingData savingData = new SavingData();
+        SavingData savingData = new SavingData(this.myFirebaseURL);
 
         // test save method 1
         savingData.testSetValue();
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
      * 測試讀取Firebase範例
      */
     private void testRetrivingData() {
-        RetrivingData retrivingData = new RetrivingData();
+        RetrivingData retrivingData = new RetrivingData(this.myFirebaseURL);
 
         // test read method 1、2
         retrivingData.readDataByValueEventListener();

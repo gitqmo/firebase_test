@@ -5,6 +5,7 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.MutableData;
 import com.firebase.client.Transaction;
+import com.firebase.client.core.Context;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,11 +16,10 @@ import tw.com.taipower.firebasequickstart.entity.User;
  * Created by new on 2016/4/26.
  */
 public class SavingData {
-    private final static String myFirebaseURL = "https://prework-db.firebaseio.com/";
-    Firebase ref = new Firebase(myFirebaseURL);
+    Firebase ref;
 
-    public SavingData(){
-        this.ref = this.ref.child("saving-data");     // setting default root
+    public SavingData(String firebaseUrl){
+        this.ref = new Firebase(firebaseUrl).child("saving-data");  // setting default root
     }
 
     /**
